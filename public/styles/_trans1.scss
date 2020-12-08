@@ -1,0 +1,18 @@
+body {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trans1 {
+  transition: background 500ms, border-radius 750ms, transform 750ms;
+}
+
+.container {
+  &:hover .trans1 {
+    background: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+  }
+}

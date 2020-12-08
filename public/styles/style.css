@@ -1,1 +1,166 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background: #333;
+}
+
+.container {
+  height: 16rem;
+  width: 16rem;
+}
+
+.box {
+  height: 16rem;
+  width: 16rem;
+  background: white;
+}
+
+.anim1 {
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim1 {
+  0% {
+    background: white;
+  }
+  25% {
+    background: green;
+  }
+  50% {
+    background: blue;
+  }
+  75% {
+    background: red;
+  }
+  100% {
+    background: white;
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    background: white;
+  }
+  25% {
+    background: green;
+  }
+  50% {
+    background: blue;
+  }
+  75% {
+    background: red;
+  }
+  100% {
+    background: white;
+  }
+}
+
+.anim2 {
+  -webkit-animation-name: anim2;
+          animation-name: anim2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes anim2 {
+  0% {
+    background: white;
+    top: 0;
+    left: 0;
+    border-radius: 0 50% 50% 50%;
+  }
+  25% {
+    background: green;
+    top: 50vh;
+    left: 0;
+    border-radius: 50% 50% 50% 0;
+  }
+  50% {
+    background: blue;
+    top: 50vh;
+    left: 50vw;
+    border-radius: 50% 50% 0 50%;
+  }
+  75% {
+    background: red;
+    top: 0;
+    left: 50vw;
+    border-radius: 50% 0 50% 50%;
+  }
+  100% {
+    background: white;
+    top: 0;
+    left: 0;
+    border-radius: 0 50% 50% 50%;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    background: white;
+    top: 0;
+    left: 0;
+    border-radius: 0 50% 50% 50%;
+  }
+  25% {
+    background: green;
+    top: 50vh;
+    left: 0;
+    border-radius: 50% 50% 50% 0;
+  }
+  50% {
+    background: blue;
+    top: 50vh;
+    left: 50vw;
+    border-radius: 50% 50% 0 50%;
+  }
+  75% {
+    background: red;
+    top: 0;
+    left: 50vw;
+    border-radius: 50% 0 50% 50%;
+  }
+  100% {
+    background: white;
+    top: 0;
+    left: 0;
+    border-radius: 0 50% 50% 50%;
+  }
+}
+
+body {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trans1 {
+  -webkit-transition: background 500ms, border-radius 750ms, -webkit-transform 750ms;
+  transition: background 500ms, border-radius 750ms, -webkit-transform 750ms;
+  transition: background 500ms, border-radius 750ms, transform 750ms;
+  transition: background 500ms, border-radius 750ms, transform 750ms, -webkit-transform 750ms;
+}
+
+.container:hover .trans1 {
+  background: red;
+  border-radius: 50%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */

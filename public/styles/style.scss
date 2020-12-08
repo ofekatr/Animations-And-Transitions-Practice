@@ -1,0 +1,19 @@
+body {
+  background: #333;
+}
+
+.container {
+  height: 16rem;
+  width: 16rem;
+}
+
+.box {
+  height: 16rem;
+  width: 16rem;
+  background: white;
+  // position: relative;
+}
+
+@import "anim1";
+@import "anim2";
+@import "trans1";

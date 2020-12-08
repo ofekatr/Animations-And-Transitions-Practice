@@ -1,0 +1,23 @@
+.anim1 {
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes anim1 {
+    0% {
+      background: white;
+    }
+    25% {
+        background: green;
+    }
+    50% {
+        background: blue;
+    }
+    75% {
+        background: red;
+    }
+    100% {
+        background: white;
+    }
+  }
